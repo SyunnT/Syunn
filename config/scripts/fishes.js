@@ -61,16 +61,6 @@
           position: relative !important;
           min-height: 100px; /* 确保页脚有足够高度 */
         }
-        footer::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: var(--footer-bg); /* 保留页脚背景 */
-          z-index: -1; /* 背景在最底层 */
-        }
         .footer-other, .footer-flex, .footer-copyright, .footer_custom_text {
           position: relative;
           z-index: 1; /* 确保页脚内容在鱼跃效果之上 */
@@ -80,36 +70,64 @@
       console.log('CSS styles added');
     }
     
-    // 加载鱼跃效果脚本
+    // 加载鱼跃效果脚本 - 使用异步加载避免同步请求警告
     var scriptId = 'fish-effect-script';
     if (!$('#' + scriptId).length) {
       var script = document.createElement('script');
       script.id = scriptId;
       script.src = '/config/scripts/fish.js';
       script.async = true;
+      script.defer = true; // 添加defer属性
       script.onload = function() {
         console.log('Fish.js loaded successfully');
       };
       script.onerror = function() {
         console.error('Failed to load fish.js');
       };
-      document.body.appendChild(script);
-      console.log('Fish.js script element added');
+      // 使用setTimeout避免同步操作
+      setTimeout(function() {
+        document.body.appendChild(script);
+        console.log('Fish.js script element added');
+      }, 0);
     }
   }
   
-  // 使用jQuery的ready
-  if (typeof jQuery !== 'undefined') {
-    $(document).ready(function() {
-      console.log('DOM ready, initializing fish effect');
-      initFishEffect();
-    });
-  } else {
-    // 备用方案
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initFishEffect);
+  // 使用requestAnimationFrame避免同步操作
+  function safeInit() {
+    if (window.requestAnimationFrame) {
+      requestAnimationFrame(function() {
+        if (typeof jQuery !== 'undefined' && jQuery.isReady) {
+          initFishEffect();
+        } else {
+          // 如果jQuery未就绪，等待
+          if (typeof jQuery !== 'undefined') {
+            $(document).ready(initFishEffect);
+          } else {
+            // 备用方案
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initFishEffect);
+            } else {
+              initFishEffect();
+            }
+          }
+        }
+      });
     } else {
-      initFishEffect();
+      // 降级方案
+      setTimeout(function() {
+        if (typeof jQuery !== 'undefined') {
+          $(document).ready(initFishEffect);
+        } else {
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initFishEffect);
+          } else {
+            initFishEffect();
+          }
+        }
+      }, 100);
     }
   }
+  
+  // 延迟初始化以避免阻塞
+  setTimeout(safeInit, 0);
 })();
