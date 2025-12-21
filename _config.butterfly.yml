@@ -11,17 +11,19 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: /config/img/favicon.png
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -30,9 +32,9 @@ menu:
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
   theme: light
-  macStyle: false
+  macStyle: true
   # Code block height limit (unit: px)
-  height_limit: false
+  height_limit: 300
   word_wrap: false
 
   # Toolbar
@@ -40,23 +42,23 @@ code_blocks:
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
-  fullpage: false
+  fullpage: true
 
 # Social media links
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  # fab fa-github: https://github.com/SyunnT || Github || '#24292e'
+  fas fa-envelope: mailto:syunn.pub@icloud.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /config/img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /config/img/favicon.jpg
   effect: false
 
 # Disable all banner images
@@ -66,7 +68,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /config/img/index.png
 
 # The banner image of archive page
 archive_img:
@@ -88,12 +90,12 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: /config/img/footimg.jpg
 
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background:
+background: '#add8e6'
 
 cover:
   # Disable the cover or not
@@ -102,7 +104,106 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    # - xxx.jpg
+    - /config/img/cover/material-1.webp
+    - /config/img/cover/material-2.webp
+    - /config/img/cover/material-3.webp
+    - /config/img/cover/material-4.webp
+    - /config/img/cover/material-5.webp
+    - /config/img/cover/material-6.webp
+    - /config/img/cover/material-7.webp
+    - /config/img/cover/material-8.webp
+    - /config/img/cover/material-9.webp
+    - /config/img/cover/material-10.webp
+    - /config/img/cover/material-11.webp
+    - /config/img/cover/material-12.webp
+    - /config/img/cover/material-13.webp
+    - /config/img/cover/material-14.webp
+    - /config/img/cover/material-15.webp
+    - /config/img/cover/material-16.webp
+    - /config/img/cover/material-17.webp
+    - /config/img/cover/material-18.webp
+    - /config/img/cover/material-19.webp
+    - /config/img/cover/material-20.webp
+    - /config/img/cover/material-21.webp
+    - /config/img/cover/material-22.webp
+    - /config/img/cover/material-23.webp
+    - /config/img/cover/material-24.webp
+    - /config/img/cover/material-25.webp
+    - /config/img/cover/material-26.webp
+    - /config/img/cover/material-27.webp
+    - /config/img/cover/material-28.webp
+    - /config/img/cover/material-29.webp
+    - /config/img/cover/material-30.webp
+    - /config/img/cover/material-31.webp
+    - /config/img/cover/material-32.webp
+    - /config/img/cover/material-33.webp
+    - /config/img/cover/material-34.webp
+    - /config/img/cover/material-35.webp
+    - /config/img/cover/material-36.webp
+    - /config/img/cover/material-37.webp
+    - /config/img/cover/material-38.webp
+    - /config/img/cover/material-39.webp
+    - /config/img/cover/material-40.webp
+    - /config/img/cover/material-41.webp
+    - /config/img/cover/material-42.webp
+    - /config/img/cover/material-43.webp
+    - /config/img/cover/material-44.webp
+    - /config/img/cover/material-45.webp
+    - /config/img/cover/material-46.webp
+    - /config/img/cover/material-47.webp
+    - /config/img/cover/material-48.webp
+    - /config/img/cover/material-49.webp
+    - /config/img/cover/material-50.webp
+    - /config/img/cover/material-51.webp
+    - /config/img/cover/material-52.webp
+    - /config/img/cover/material-53.webp
+    - /config/img/cover/material-54.webp
+    - /config/img/cover/material-55.webp
+    - /config/img/cover/material-56.webp
+    - /config/img/cover/material-57.webp
+    - /config/img/cover/material-58.webp
+    - /config/img/cover/material-59.webp
+    - /config/img/cover/material-60.webp
+    - /config/img/cover/material-61.webp
+    - /config/img/cover/material-62.webp
+    - /config/img/cover/material-63.webp
+    - /config/img/cover/material-64.webp
+    - /config/img/cover/material-65.webp
+    - /config/img/cover/material-66.webp
+    - /config/img/cover/material-67.webp
+    - /config/img/cover/material-68.webp
+    - /config/img/cover/material-69.webp
+    - /config/img/cover/material-70.webp
+    - /config/img/cover/material-71.webp
+    - /config/img/cover/material-72.webp
+    - /config/img/cover/material-73.webp
+    - /config/img/cover/material-74.webp
+    - /config/img/cover/material-75.webp
+    - /config/img/cover/material-76.webp
+    - /config/img/cover/material-77.webp
+    - /config/img/cover/material-78.webp
+    - /config/img/cover/material-79.webp
+    - /config/img/cover/material-80.webp
+    - /config/img/cover/material-81.webp
+    - /config/img/cover/material-82.webp
+    - /config/img/cover/material-83.webp
+    - /config/img/cover/material-84.webp
+    - /config/img/cover/material-85.webp
+    - /config/img/cover/material-86.webp
+    - /config/img/cover/material-87.webp
+    - /config/img/cover/material-88.webp
+    - /config/img/cover/material-89.webp
+    - /config/img/cover/material-90.webp
+    - /config/img/cover/material-91.webp
+    - /config/img/cover/material-92.webp
+    - /config/img/cover/material-93.webp
+    - /config/img/cover/material-94.webp
+    - /config/img/cover/material-95.webp
+    - /config/img/cover/material-96.webp
+    - /config/img/cover/material-97.webp
+    - /config/img/cover/material-98.webp
+    - /config/img/cover/material-99.webp
+    - /config/img/cover/material-100.webp
 
 # Replace Broken Images
 error_img:
@@ -111,17 +212,17 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: '页面没有找到'
   background: /img/error-page.png
 
 post_meta:
   # Home Page
   page:
     # Choose: created / updated / both
-    date_type: created
+    date_type: updated
     # Choose: date / relative
-    date_format: date
+    date_format: relative
     categories: true
     tags: false
     label: true
@@ -149,9 +250,9 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
-  effect: true
+  effect: false
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
@@ -182,7 +283,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
   length: 500
 
@@ -196,7 +297,7 @@ toc:
   number: true
   expand: false
   # Only for post
-  style_simple: false
+  style_simple: true
   scroll_percent: true
 
 post_copyright:
@@ -238,19 +339,19 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # Displays outdated notice for a post
 noticeOutdate:
-  enable: false
+  enable: true
   # Style: simple / flat
   style: flat
   # When will it be shown
-  limit_day: 365
+  limit_day: 180
   # Position: top / bottom
   position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 本文已经超过
+  message_next: 天没有更新，内容可能不再适用，请谨慎参考！
 
 # --------------------------------------
 # Footer Settings
@@ -264,7 +365,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text:
+  custom_text: <a href="https://icp.gov.moe/?keyword=20233201" target="_blank"><img class="icp-icon" src="/config/img/icp/icon120.png"><span>萌ICP备20233201号</span></a>
 
 # --------------------------------------
 # Aside Settings
@@ -275,7 +376,7 @@ aside:
   hide: false
   # Show the button to hide the aside in bottom right button
   button: true
-  mobile: true
+  mobile: false
   # Position: left / right
   position: right
   display:
@@ -289,12 +390,12 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/SyunnT
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 迷失的人迷失了，相逢的人会再相逢
   card_recent_post:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 5
     # Sort: date / updated
@@ -308,7 +409,7 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
@@ -318,14 +419,14 @@ aside:
     enable: true
     # If set 0 will show all
     limit: 40
-    color: false
+    color: true
     # Order of tags, random/name/length
     orderby: random
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: 1
     sort_order:
   card_archives:
-    enable: true
+    enable: false
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
@@ -336,7 +437,7 @@ aside:
     limit: 8
     sort_order:
   card_post_series:
-    enable: true
+    enable: false
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -362,7 +463,7 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -392,7 +493,7 @@ darkmode:
   end:
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -415,7 +516,7 @@ anchor:
   # When you scroll, the URL will update according to header id.
   auto_update: false
   # Click the headline to scroll and update the anchor
-  click_to_scroll: false
+  click_to_scroll: true
 
 photofigcaption: false
 
@@ -428,7 +529,7 @@ copy:
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -452,7 +553,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: katex
   per_page: true
   hide_scrollbar: false
 
@@ -783,7 +884,7 @@ tag_ui:
 rounded_corners_ui: true
 
 # Stretches the lines so that each line has equal width
-text_align_justify: false
+text_align_justify: true
 
 # Add a mask to the header and footer
 mask:
@@ -808,13 +909,13 @@ display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false
+  enable: true
   # Specify the field to beautify (site or post)
-  field: post
+  field: site
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon:
+  title_prefix_icon: '\f0c1'
   # Specify the color of the title prefix icon, such as '#F47466'
-  title_prefix_icon_color:
+  title_prefix_icon_color: '#add8e6'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work
@@ -850,13 +951,13 @@ activate_power_mode:
 # canvas_ribbon
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   # The size of ribbon
   size: 150
   # The opacity of ribbon (0 ~ 1)
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
+  click_to_change: true
   mobile: false
 
 # Fluttering Ribbon
@@ -867,7 +968,7 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   color: '0,0,255'
   # The opacity of line (0~1)
@@ -880,7 +981,7 @@ canvas_nest:
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999
   mobile: false
 
@@ -908,7 +1009,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1001,7 +1102,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
@@ -1055,6 +1156,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    - <script src="/config/scripts/jquery.min.js"></script>
+    - <script src="/config/scripts/fishes.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN Settings
@@ -1068,7 +1171,7 @@ CDN:
   third_party_provider: jsdelivr
 
   # Add version number to url, true or false
-  version: true
+  version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}

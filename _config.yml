@@ -8,12 +8,13 @@ subtitle: 'Enjoy the tech'
 description: ''
 keywords:
 author: Syunn
-language: zh-cn
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://syunn.cn
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,3 +105,7 @@ deploy:
   type: 'git'
   repo: 'https://github.com/SyunnT/Syunn'
   branch: 'gh-pages'
+
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
