@@ -365,7 +365,8 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: <a href="https://icp.gov.moe/?keyword=20233201" target="_blank"><img class="icp-icon" src="/config/img/icp/icon120.png"><span>萌ICP备20233201号</span></a>
+  custom_text: 
+  # <a href="https://icp.gov.moe/?keyword=20233201" target="_blank"><img class="icp-icon" src="/config/img/icp/icon120.png"><span>萌ICP备20233201号</span></a>
 
 # --------------------------------------
 # Aside Settings
@@ -1156,8 +1157,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="/config/scripts/jquery.min.js"></script>
-    # - <script src="/config/scripts/fishes.js"></script>
+    - <script src="/config/scripts/jquery.min.js"></script>
+    - <script src="/config/scripts/fishes.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN Settings
