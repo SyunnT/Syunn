@@ -1156,8 +1156,8 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <script src="/config/scripts/jquery.min.js"></script>
-    - <script src="/config/scripts/fishes.js"></script>
+    # - <script src="/config/scripts/jquery.min.js"></script>
+    # - <script src="/config/scripts/fishes.js"></script>
     # - <script src="xxxx"></script>
 
 # CDN Settings
