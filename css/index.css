@@ -4471,12 +4471,10 @@ figure.highlight pre .javascript .function {
 }
 #post-comment .comment-head .comment-switch {
   display: inline-block;
-  float: right;
-  margin: 2px auto 0;
-  padding: 4px 16px;
-  width: max-content;
-  border-radius: 8px;
-  background: #f6f8fa;
+  vertical-align: middle;
+}
+#post-comment .comment-head .comment-switch > span {
+  display: none;
 }
 #post-comment .comment-head .comment-switch .first-comment {
   color: #49b1f5;
@@ -7791,9 +7789,6 @@ blockquote.pullquote.right {
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
 }
-[data-theme='dark'] #post-comment .comment-switch {
-  background: #2c2c2c !important;
-}
 [data-theme='dark'] #post-comment .comment-switch #switch-btn {
   filter: brightness(0.8);
 }
@@ -8479,6 +8474,20 @@ blockquote.pullquote.right {
   -o-animation: spin 1s linear infinite;
   -ms-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
+}
+@media screen and (max-width: 768px) {
+  #local-search .search-dialog .search-result-list {
+    max-height: calc(var(--search-height) - 200px) !important;
+  }
+}
+#local-search #local-search-stats .search-result-stats {
+  text-align: left;
+}
+#local-search .search-keyword {
+  font-weight: 600;
+}
+#local-search #loading-database ~ * {
+  visibility: hidden;
 }
 @-moz-keyframes spin {
   to {
