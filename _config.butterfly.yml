@@ -750,7 +750,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: https://syunn.cn:23366/
+  server: https://syunn.cn:23366
   site: 瞬のブログ
   # Use Artalk visitor count as the page view count
   visitor: true
