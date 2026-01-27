@@ -28,6 +28,6 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-butterfly": "^5.5.3",
     "hexo-wordcount": "^6.0.1",
-    "katex": "^0.16.27"
+    "katex": "^0.16.28"
   }
 }
